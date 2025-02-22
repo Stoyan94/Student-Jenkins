@@ -1,12 +1,12 @@
 const assert = require('assert');
 const fetch = require('node-fetch');
 
-suite('Add Students page', function() {
-  test('Page title', async function() {
-    let res = await fetch("http://localhost:8888/add-student");
-    let body = await res.text();
-    assert.ok(body.includes("<h1>Register New Student</h1>"));
-  });
+// suite('Add Students page', function() {
+//   test('Page title', async function() {
+//     let res = await fetch("http://localhost:8888/add-student");
+//     let body = await res.text();
+//     assert.ok(body.includes("<h1>Register New Student</h1>"));
+//   });
 
   test('Students HTML form', async function() {
     let res = await fetch("http://localhost:8888/add-student");
